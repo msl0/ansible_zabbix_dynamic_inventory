@@ -14,7 +14,7 @@ Python script to retrieve data from Zabbix API and convert it to Ansible invento
 3. Modify file
    - Zabbix URL: [line 23](https://github.com/msl0/ansible_zabbix_dynamic_inventory/blob/main/zabbix_inventory.py#L23)
    - Zabbix user credentials: [line 29](https://github.com/msl0/ansible_zabbix_dynamic_inventory/blob/main/zabbix_inventory.py#L29)
-   - optionaly change hostgroup criteria to limit groups: [line 38](https://github.com/msl0/ansible_zabbix_dynamic_inventory/blob/main/zabbix_inventory.py#L38) - [45](https://github.com/msl0/ansible_zabbix_dynamic_inventory/blob/main/zabbix_inventory.py#L45)
+   - optionaly adjust hostgroup criteria to limit groups: [line 38](https://github.com/msl0/ansible_zabbix_dynamic_inventory/blob/main/zabbix_inventory.py#L38) - [45](https://github.com/msl0/ansible_zabbix_dynamic_inventory/blob/main/zabbix_inventory.py#L45)
 4. Change permissions to allow execute `chmod +x zabbix_inventory.py`
 5. Verify `ansible-inventory -i zabbix_inventory.py --list`
 
